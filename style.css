@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #070F2B
+}
+
+
+
+.formlogin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #1B1A55;
+    border-radius: 10px;
+}
+
+.formlogin h1{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #535C91;
+    color: white;
+}
+
+.formlogin form{
+    padding: 040px;
+    box-sizing: border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #535C91;
+    margin: 30px;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #535C91;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.username span::before{
+    content:'';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: purple;
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label{
+    top: -5px;
+    color: purple;
+}
+
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar{
+    margin: -5px 70px 5px;
+    color: blue;
+    cursor: pointer;
+    text-align: center;
+}
+
+.recordar:hover{
+    text-decoration: underline;
+}
+
+input[type="button"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #070F2B;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+
+}
+
+input[type="button"]:hover{
+    border-color: black;
+    transition: .2s;
+}
+
+.registrar{
+    margin: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.registrar a{
+    color: blue;
+    text-decoration: none;
+}
+
+.registrar a:hover{
+    text-decoration: underline;
+}
