@@ -131,3 +131,7 @@ input[type="button"]:hover{
     margin-top: 10%;
 }
 
+.navbar-brand{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
