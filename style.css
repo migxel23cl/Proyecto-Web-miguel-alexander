@@ -134,6 +134,7 @@ input[type="button"]:hover{
     color: white;
     text-align: center;
     margin-top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar-brand{
@@ -163,5 +164,69 @@ input[type="button"]:hover{
     border-radius: 50px;
 }
 
+.card{
+    color: white;
+    background-color: #1B1A55;
+}
+
+.btn{
+    background-color: #535C91;
+    border: #070F2B;
+}
+
+
+
+.carousel-item{
+    left: 30%;
+    width: 500px;;
+    flex: auto;
+}
+
+
+.tituloproU {
+    color: white;
+    margin-top: 40px;
+}
+
+.botoncomprar{
+    width: 450px;
+    flex: auto;
+    margin: left;
+    margin-top: 20px;
+}
+
+.botoncarrito{
+    width: 400px;
+    flex: auto;
+    margin: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.costepro{
+    color: white;
+    margin-left: 150px;
+    margin-top: 2%;
+}
+
+.desc{
+    margin-left: 1000px;
+    color: white;
+}
+
+.offcanvas-body{
+    background-color: #1B1A55;
+    color: white;
+}
+
+.con{
+    background-color: #535C91;
+}
+
+.botonpagar{
+    width: 200px;
+    margin-left: 50%;
+    margin-top: 20%;
+}
 
 
