@@ -167,6 +167,7 @@ input[type="button"]:hover{
 .card{
     color: white;
     background-color: #1B1A55;
+    position: relative;
 }
 
 .btn{
@@ -228,5 +229,11 @@ input[type="button"]:hover{
     margin-left: 50%;
     margin-top: 20%;
 }
+.card:hover{   
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 4); 
+    transform: translateY(-10%); 
+    transition: 1s;
+}
+
 
 
