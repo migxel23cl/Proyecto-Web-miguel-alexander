@@ -235,3 +235,32 @@ input[type="button"]:hover{
     transition: 1s; 
 }
 
+
+.tituloindex img{
+    margin: auto;
+    cursor: pointer;
+    transition: 1.4s;
+
+}
+
+.tituloindex img:hover{
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+
+.acercade{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.instruccion{
+    margin-top: 1cm;
+    text-decoration: none;
+    color: white;
+}
+
+.instruccion a:hover{
+    color: white;
+
+}
