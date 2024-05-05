@@ -107,7 +107,6 @@ form .username{
     outline: none;
   }
   
-  
 
 input[type="button"]{
     width: 100%;
@@ -279,7 +278,6 @@ input[type="button"]:hover{
     color: white;
 
 }
-
 
 .form-register {
     width: 400px;
