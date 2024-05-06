@@ -335,3 +335,12 @@ input[type="button"]:hover{
     cursor: pointer;
     outline: none;
   }
+
+  .navbar-brand1 a,
+  .navbar-brand2 a {
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold; /* Pone el texto en negrita */
+    color: black; /* Cambia el color del texto a negro */
+    /* Puedes agregar más estilos según tus necesidades */
+  }
+  
