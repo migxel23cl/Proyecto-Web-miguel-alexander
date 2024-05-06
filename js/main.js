@@ -1,24 +1,25 @@
-const loginForm = document.getElementById('login-form');
-const usernameInput = document.getElementById('username');
-const passwordInput = document.getElementById('password');
-const loginButton = document.getElementById('login-button');
+$(document).ready(function() {
+  $('#formularioRegistro').submit(function(e) {
+    e.preventDefault();
 
-loginButton.addEventListener('click', function(event) {
-  event.preventDefault(); 
+    var usuario = {
+      nombres: $('#nombres').val(),
+      apellido: $('#apellido').val(),
+      correo: $('#correo').val(),
+      password: $('#password').val()
+    };
 
+    // Imprimir datos en la consola
+    console.log(usuario);
 
-  const username = usernameInput.value;
-  const password = passwordInput.value;
+    // Limpiar los campos del formulario
+    $('#nombres').val('');
+    $('#apellido').val('');
+    $('#correo').val('');
+    $('#password').val('');
 
-  
-  if (username === '' || password === '') {
-    alert('Por favor, ingrese su nombre de usuario y contraseña.');
-    return;
-  }
-
-
-  alert('¡Inicio de sesión exitoso!');
-
-
-  window.location.href = "gustos.html";
+    // Redirigir a la página de inicio de sesión
+    //window.location.href = 'login.html';
+  });
 });
+
