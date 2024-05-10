@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto Unico</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,9 +24,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
-                    <div class="con">
-                      <img src="https://ae01.alicdn.com/kf/Sf259e9d443834ecc900ffcca6fae75f7S.jpg_640x640Q90.jpg_.webp" alt="" width="100">
-                      Teclado Gamer - Precio:$$$$$
+                    <div class="container">
+                      <img id="product-image" src="" alt="Cargando img..." width="100">
+                      <h2 id="product-name"></h2>
+                      <p id="product-price"></p>
                     </div>
                     <div class="botonpagar"><input type="button" value="Pagar"></div>
                   </div>
@@ -47,7 +49,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://1.bp.blogspot.com/-GZZTO0qzdAQ/YEoxMyOXrMI/AAAAAAABlKg/IWEOn0GLEq0CSHmdIQ4F_WIxeZyVJoDLACLcBGAsYHQ/s1200/703.jpg" class="d-block w-100" alt="...">
+                <img id="product-image" src="https://1.bp.blogspot.com/-GZZTO0qzdAQ/YEoxMyOXrMI/AAAAAAABlKg/IWEOn0GLEq0CSHmdIQ4F_WIxeZyVJoDLACLcBGAsYHQ/s1200/703.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="https://http2.mlstatic.com/D_Q_NP_804632-MLU74113041818_012024-O.webp" class="d-block w-100" alt="...">
@@ -65,15 +67,16 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="tituloproU"><h1>Figura de accion Goku SSJ 3</h1></div>
+          <div class="tituloproU"><h1 id="product-name">Figura de accion Goku SSJ 3</h1></div>
           <div class="botoncomprar"><input type="button" value="Comprar"></div>
-          <div class="botoncarrito"><input type="button" value="Agregar Carrito"></div>
-          <div class="costepro"><h1>$$$$$$</h1>
+          <div class="botoncarrito"><input id="cart-button" type="button" value="Agregar Carrito"></div>
+          <div class="costepro"><h1 id="product-price">$$$$$$</h1>
           </div>
           <div class="desc"><h1>Descripcion</h1>
           </div>
         </div>
     </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
