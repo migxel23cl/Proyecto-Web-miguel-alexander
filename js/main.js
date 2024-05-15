@@ -1,13 +1,26 @@
 
-$(document).ready(function() {
-  $('#formularioRegistro').submit(function(e) {
+$(document).ready(function () {
+  $('#formularioRegistro').submit(function (e) {
     e.preventDefault();
 
+    // Obtener los valores de los campos del formulario
+    var nombres = $('#nombres').val();
+    var apellido = $('#apellido').val();
+    var correo = $('#correo').val();
+    var password = $('#password').val();
+
+    // VALIDACION QUE LOS CAMPOS DEL REGISTRO NO ESTEN VACIOS
+    if (nombres.trim() === '' || apellido.trim() === '' || correo.trim() === '' || password.trim() === '') {
+      alert("Por favor, complete todos los campos.");
+      return; // Detener el envío del formulario si hay campos vacíos
+    }
+
+    // Crear el objeto de usuario
     var usuario = {
-      nombres: $('#nombres').val(),
-      apellido: $('#apellido').val(),
-      correo: $('#correo').val(),
-      password: $('#password').val()
+      nombres: nombres,
+      apellido: apellido,
+      correo: correo,
+      password: password
     };
 
     // Guardar el usuario en localStorage
@@ -22,7 +35,8 @@ $(document).ready(function() {
     window.location.href = 'login.html';
   });
 
-  $('#login-button').click(function() {
+
+  $('#login-button').click(function () {
     var username = $('#username').val();
     var password = $('#password').val();
 
@@ -36,18 +50,18 @@ $(document).ready(function() {
       alert("Usuario o contraseña incorrectos. Por favor, inténtelo de nuevo.");
     }
   });
-  
+
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Array para almacenar los productos en el carrito
   var carrito = [];
 
   // Función para actualizar el carrito
   function actualizarCarrito() {
-    $('#product-image').attr('src', '');
-    $('#product-name').text('');
-    $('#product-price').text('');
+    $('#product-image').attr('src', '#');
+    $('#product-name').text(' ');
+    $('#product-price').text(' ');
     var ultimoProducto = carrito[carrito.length - 1];
     if (ultimoProducto) {
       $('#product-image').attr('src', ultimoProducto.imagen);
@@ -57,12 +71,13 @@ $(document).ready(function() {
   }
 
   // Cuando se hace clic en "Agregar Carrito"
-  $('#cart-button').click(function() {
+  $('#cart-button').click(function () {
     var producto = {
-      nombre: $('#product-name').text(),
-      precio: $('#product-price').text(),
-      imagen: $('#product-image').attr('src')
+      nombre: $('.tituloproU').text(),
+      precio: $('.costepro').text(),
+      imagen: $('#prodimage').attr('src')
     };
+    console.log(producto)
 
     // Agregar el producto al carrito
     carrito.push(producto);
@@ -73,6 +88,7 @@ $(document).ready(function() {
     // Abrir el offcanvas
     var offcanvasElement = document.getElementById('offcanvasRight');
     var bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
+    console.log(producto.nombre)
     bsOffcanvas.show();
   });
 });
