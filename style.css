@@ -351,3 +351,43 @@ label{
 p{
     color: white;
 }
+
+#nuevaTarjeta {
+    width: 300px;
+    border: 3px solid #e01994;
+    box-shadow: 2px 2px 6px 0px  #db09e2;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#nuevaTarjeta .image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#nuevaTarjeta .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#nuevaTarjeta h2 {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+#nuevaTarjeta span {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.butonapi button{
+    background-color: #535C91;
+    margin-top: 25px;
+    width: 200px;
+    border-color: #535C91;
+    color: white;
+}

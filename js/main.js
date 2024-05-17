@@ -91,11 +91,33 @@ $(document).ready(function () {
     console.log(producto.nombre)
     bsOffcanvas.show();
   });
+
+  $('#btnpagodirecto').click(function () {
+
+    window.location.href = 'VentanaPago.html';
+
+  });
+
+  $('#pagarcarrito').click(function () {
+
+    window.location.href = 'VentanaPago.html';
+
+  });
+
+//CODIGO PARA QUE ME GENERE UN NUEVO PERSONAJE CADA VEZ QUE LE DOY CLICK AL BOTON
+
+
 });
 
 
 
-//SOLUCIONAR PROBLEMA NO RECONOCE EL PRODUCTO
+
+
+  
+
+
+
+
 
 
 
