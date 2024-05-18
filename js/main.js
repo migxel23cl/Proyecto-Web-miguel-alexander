@@ -103,11 +103,23 @@ $(document).ready(function () {
     window.location.href = 'VentanaPago.html';
 
   });
+  $(document).ready(function () {
+  $('#btnapi').click(function () {
 
-//CODIGO PARA QUE ME GENERE UN NUEVO PERSONAJE CADA VEZ QUE LE DOY CLICK AL BOTON
+    window.location.href = 'quepjeres.html';
 
+  });
+})
+
+$(document).ready(function () {
+ //https://dragonball-api.com/api/characters/1
+//CREAR FUNCION PARA RECOJER DATOS DE LA API, Y MODIFICAR EL NUMERO PARA CAMBIAR PERSONAJE
 
 });
+});
+
+
+
 
 
 
